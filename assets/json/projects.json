@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Netflix Clone App",
+    "paragraph": "",
+    "tools": [
+      {
+        "title": "React.js"
+      },
+      {
+        "title": "Firebase"
+      },
+      {
+        "title": "Git"
+      },
+      {
+        "title": "Front-end project"
+      }
+    ],
+    "img": "./assets/img/Netflix-clone.gif",
+    "github": "https://github.com/Andjela24/netflix-clone",
+    "website": "https://andjela-netflix-clone.web.app "
+  },
+  {
+    "title": "Portfolio Website",
+    "paragraph": " ",
+    "tools": [
+      {
+        "title": "Angular 13"
+      },
+      {
+        "title": "SCSS"
+      },
+      {
+        "title": "JavaScript"
+      },
+      {
+        "title": "HTML5"
+      }
+    ],
+    "img": "./assets/img/Portfolio.gif",
+    "github": "https://github.com/Andjela24/andjela-portfolio",
+    "website": " "
+  },
+  {
+    "title": "CRM ",
+    "paragraph": "Full Stack App An insurance company's Customer Relationship Management website.",
+    "tools": [
+      {
+        "title": "React"
+      },
+      {
+        "title": "JavaScript"
+      },
+      {
+        "title": "MongoDB"
+      },
+      {
+        "title": "SCSS"
+      },
+      {
+        "title": "Exspress"
+      },
+      {
+        "title": "Mongoose"
+      },
+      {
+        "title": "Git"
+      }
+    ],
+    "img": "./assets/img/crm.gif",
+    "github": "https://github.com/hanibengozi/CRM-Clients-Management",
+    "website": ""
+  }
+]
