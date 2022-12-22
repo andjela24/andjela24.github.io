@@ -1,0 +1,128 @@
+@import "mixins";
+@import "variables";
+
+.about {
+  position: relative;
+  height: 110vh;
+  @include flex-container(row);
+  background-color: #1B1734;
+
+  &__details {
+    left: 10%;
+    position: absolute;
+    flex-basis: 50%;
+    color: $white;
+  }
+
+  &__title {
+    color: $white;
+    font-size: $font-size-h1;
+  }
+
+  &__paragraph {
+    color: $white;
+    font-size: $paragraph;
+    margin-bottom: 15px;
+  }
+
+  &__cv_button {
+    background-color: #896FBC;
+    border-radius: 10px;
+    border: 2px solid #420264;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  &__cv_button:hover {
+    background-color: #5C038C;
+    color: white;
+  }
+
+  &__img {
+    position: absolute;
+    height: 90vh;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+  }
+}
+
+@include mq-between(xs, lg) {
+  .about {
+    background-color: #1B1734;
+    &__img {
+      position: absolute;
+      flex-basis: 90%;
+      bottom: 0;
+      right: 0;
+      left: 25px;
+      width: 90%;
+      height: fit-content;
+    }
+
+    &__details {
+      position: absolute;
+      flex-basis: 90%;
+      top: 100px;
+      right: 0;
+      left: 0;
+      @include flex-container(column);
+    }
+  }
+}
+@include mq-between(md, lg) {
+  .about {
+    height: 165vh;
+  }
+}
+@include mq-between(sm, md) {
+  .about {
+    height: 120vh;
+  }
+}
+@include mq-between(xs, sm) {
+  .about {
+    height: 100vh;
+  }
+}
+.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block;
+}
+@keyframes wave-animation {
+	0% {
+		transform: rotate( 0.0deg);
+	}
+	10% {
+		transform: rotate(14.0deg);
+	}
+	20% {
+		transform: rotate(-8.0deg);
+	}
+	30% {
+		transform: rotate(14.0deg);
+	}
+	40% {
+		transform: rotate(-4.0deg);
+	}
+	50% {
+		transform: rotate(10.0deg);
+	}
+	60% {
+		transform: rotate( 0.0deg);
+	}
+	100% {
+		transform: rotate( 0.0deg);
+	}
+}
+

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "buttons";
+@import "reset";
+@import "animations";
+@import "variables";
+
+body {
+  overflow-x: hidden;
+  font-family: $font-roboto;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.purple_highlight {
+  color: #896FBC;
+  font-weight: 700;
+}
+
+.underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: $blue;
+  margin: 20px auto 20px;
+}

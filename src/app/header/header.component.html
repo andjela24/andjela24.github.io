@@ -1,0 +1,15 @@
+<header>
+    <div class="toggle" (click)="navOpened()">
+        <i class="fas fa-2x" [ngClass]="{'fa-bars':!isNavOpen, 'fa-times':isNavOpen}"></i>
+    </div>
+    <nav>
+        <ul class="nav nav--highlighted" [ngClass]="{'nav__open':isNavOpen}">
+            <li class="nav__brand"><img src="assets/img/logo.png" alt="" width="70" height="70"
+                    class="d-inline-block align-text-top"></li>
+            <li class="nav__item"><a (click)="scroll('about')">About</a></li>
+            <li class="nav__item"><a (click)="scroll('skill')" #skill>Skills</a></li>
+            <li class="nav__item"><a (click)="scroll('projects')" #projects>Projects</a></li>
+            <li class="nav__item"><a (click)="scroll('contact')" #contact>Contact</a></li>
+        </ul>
+    </nav>
+</header>

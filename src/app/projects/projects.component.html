@@ -1,0 +1,31 @@
+<section class="projects" id="projects">
+    <div class="projects__heading" [@scrollAnimation]="state">
+        <h2 class="projects__title">PROJECTS</h2>
+    </div>
+    <div class="underline"></div>
+    <div class="container">
+        <div class="grid" [@scrollAnimation]="state">
+            <figure class="photo photo--wrapper" *ngFor="let projects of projectList">
+                <img class="photo__img" alt="projects" [src]="projects.img">
+                <div class="overlay">
+                    <h4 class="overlay__title">{{projects.title}}</h4>
+                    <p class="overlay__paragraph">{{projects.paragraph}}</p>
+                    <ul class="list">
+                        <li class="list__item" *ngFor="let tools of projects.tools"><span
+                                class="list__tag">{{tools.title}}</span></li>
+                    </ul>
+                    <div class="overlay__icon">
+                        <a href="{{projects.github}}" target="_blank">
+                            <img class="overlay__image" src="./assets/icons/github.png" />
+                        </a>
+                    </div>
+                    <div class="overlay__icon">
+                        <a href="{{projects.website}}" target="_blank">
+                            <img class="overlay__image" src="./assets/icons/website-white.png" />
+                        </a>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </div>
+</section>
