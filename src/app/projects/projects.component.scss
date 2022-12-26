@@ -1,10 +1,12 @@
 @import "mixins";
 @import "variables";
+@import "~bootstrap/dist/css/bootstrap.css";
 
 .projects {
   @include flex-container(column);
+  position: relative;
   padding: 3rem 0 3rem 0;
-  background-color: #1b1734;
+  background-color: $dark-purple;
 
   &__heading {
     align-self: center;
@@ -13,7 +15,7 @@
 
   &__title {
     font-size: $font-size-h2;
-    color: white;
+    color: $white;
   }
 }
 
@@ -59,7 +61,7 @@
   color: $white;
 
   &__title {
-    color: white;
+    color: $white;
     margin-top: 2em;
   }
 

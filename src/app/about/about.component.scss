@@ -1,11 +1,12 @@
 @import "mixins";
 @import "variables";
+@import "~bootstrap/dist/css/bootstrap.css";
 
 .about {
-  position: relative;
-  height: 110vh;
   @include flex-container(row);
-  background-color: #1B1734;
+  position: relative;
+  height: 100vh;
+  background-color: $dark-purple;
 
   &__details {
     left: 10%;
@@ -26,10 +27,10 @@
   }
 
   &__cv_button {
-    background-color: #896FBC;
+    background-color: $light-purple;
+    color: $white;
     border-radius: 10px;
-    border: 2px solid #420264;
-    color: white;
+    border: 2px solid $purple;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -41,42 +42,67 @@
   }
 
   &__cv_button:hover {
-    background-color: #5C038C;
-    color: white;
+    background-color: $purple;
+    color: $white;
   }
 
   &__img {
     position: absolute;
     height: 90vh;
+    max-width: 100%;
     bottom: 0;
     right: 0;
-    max-width: 100%;
+  }
+}
+
+@include mq-between(sm, md) {
+  .about {
+    &__img {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      right: 10%;
+      left: 10%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &__details {
+      //position: absolute;
+      flex-basis: 90%;
+      top: 100px;
+      left: 10%;
+      //@include flex-container(column);
+    }
   }
 }
 
 @include mq-between(xs, lg) {
   .about {
-    background-color: #1B1734;
     &__img {
       position: absolute;
-      flex-basis: 90%;
-      bottom: 0;
-      right: 0;
-      left: 25px;
-      width: 90%;
-      height: fit-content;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: bottom;
+      //flex-basis: 90%;
+      //bottom: 0;
+      //right: 20%;
+      //left: 20%;
+      //max-width: 60%;
+      //height: auto;
     }
 
     &__details {
       position: absolute;
       flex-basis: 90%;
       top: 100px;
-      right: 0;
-      left: 0;
+      left: 10%;
       @include flex-container(column);
     }
   }
 }
+
 @include mq-between(md, lg) {
   .about {
     height: 165vh;
@@ -93,36 +119,35 @@
   }
 }
 .wave {
-	animation-name: wave-animation;
-	animation-duration: 2.5s;
-	animation-iteration-count: infinite;
-	transform-origin: 70% 70%;
-	display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 @keyframes wave-animation {
-	0% {
-		transform: rotate( 0.0deg);
-	}
-	10% {
-		transform: rotate(14.0deg);
-	}
-	20% {
-		transform: rotate(-8.0deg);
-	}
-	30% {
-		transform: rotate(14.0deg);
-	}
-	40% {
-		transform: rotate(-4.0deg);
-	}
-	50% {
-		transform: rotate(10.0deg);
-	}
-	60% {
-		transform: rotate( 0.0deg);
-	}
-	100% {
-		transform: rotate( 0.0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-

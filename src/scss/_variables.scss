@@ -1,10 +1,8 @@
 //Colors
-$gray21: #800000;
-$blue: #000000;
-$blue-dark: #000000;
-$blue-light: #800000;
+$dark-purple: #1b1734;
+$light-purple: #896fbc;
+$purple: #420264;
 $white: #fff;
-$bordo: #800000;
 $black: #000000;
 
 //Font Size
@@ -19,18 +17,22 @@ $paragraph: 1rem;
 $paragraph-sm: 1.5rem;
 $paragraph-lg: 2rem;
 
-$box-shadow: #800000;
-$overlay: rgba(0,0,0,0.6);
+$overlay: rgba(0, 0, 0, 0.6);
 
 //Font
 $font-open-serif: "Opens Sans", sans-serif;
 $font-roboto: "Roboto";
 
 //Screens for use in media queries
-$breakpoints : (
-    xs:0, // Extra small screen / phone
-    sm:544px, // Small screen / phone
-    md:768px, // Medium screen / tablet
-    lg:1000px, //Large screen / desktop
-    xl:1200, // Extra large screen / wide desktop
+$breakpoints: (
+  xs: 0,
+  // Extra small screen / phone
+  sm: 544px,
+  // Small screen / phone
+  md: 768px,
+  // Medium screen / tablet
+  lg: 1000px,
+  //Large screen / desktop
+  xl: 1200,
+  // Extra large screen / wide desktop
 );
