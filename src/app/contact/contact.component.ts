@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { scrollAnimation } from '../shared/animations';
 import { ScrollAnimationComponent } from '../shared/scroll-animation.component';
 
@@ -6,12 +6,11 @@ import { ScrollAnimationComponent } from '../shared/scroll-animation.component';
   selector: 'contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  animations: [
-    scrollAnimation
-  ]
+  animations: [scrollAnimation],
 })
-export class ContactComponent extends ScrollAnimationComponent implements OnInit { 
-  ngOnInit() {
-  }
-
+export class ContactComponent
+  extends ScrollAnimationComponent
+  implements OnInit
+{
+  ngOnInit() {}
 }

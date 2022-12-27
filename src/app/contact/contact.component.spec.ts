@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
 import { ContactComponent } from './contact.component';
 
 describe('ContactComponent', () => {
@@ -8,9 +7,8 @@ describe('ContactComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
-    })
-    .compileComponents();
+      declarations: [ContactComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

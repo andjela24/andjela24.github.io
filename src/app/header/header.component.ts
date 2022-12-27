@@ -3,18 +3,21 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-
   public isNavOpen: boolean;
 
-  constructor() { }
+  constructor() {}
 
   scroll(id) {
     console.log(`scrolling to ${id}`);
     let el = document.getElementById(id);
-    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
     this.isNavOpen = false;
   }
 
@@ -23,7 +26,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navOpened() {
-    console.log("clicked");
+    console.log('clicked');
     this.isNavOpen = !this.isNavOpen;
   }
 

@@ -1,6 +1,6 @@
 @import "mixins";
 @import "variables";
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/scss/bootstrap.scss";
 
 .about {
   @include flex-container(row);
@@ -53,9 +53,19 @@
     bottom: 0;
     right: 0;
   }
+  @include for-phone-only {
+    &__img {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      right: 10%;
+      left: 10%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
 }
-
-@include mq-between(sm, md) {
+@include for-phone-only {
   .about {
     &__img {
       position: absolute;
@@ -76,7 +86,29 @@
     }
   }
 }
+/*
+@include mq-between(xs, md) {
+  .about {
+    &__img {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      right: 10%;
+      left: 10%;
+      object-fit: cover;
+      object-position: bottom;
+    }
 
+    &__details {
+      //position: absolute;
+      flex-basis: 90%;
+      top: 100px;
+      left: 10%;
+      //@include flex-container(column);
+    }
+  }
+}
+/*
 @include mq-between(xs, lg) {
   .about {
     &__img {
@@ -118,6 +150,7 @@
     height: 100vh;
   }
 }
+*/
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;

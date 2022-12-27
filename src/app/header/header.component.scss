@@ -15,16 +15,16 @@ header {
   position: fixed;
   top: 2.5em;
   right: 2.5em;
-  color: #896FBC;
+  color: $light-purple;
   cursor: pointer;
   z-index: 1000;
 }
 
 .nav {
   $this: &;
-  @include flex-container(row,flex-end);  
+  @include flex-container(row, flex-end);
   font-size: 1.5rem;
-  background: transparent;  
+  background: transparent;
   padding: 16px;
   transition: 1s;
 
@@ -37,7 +37,7 @@ header {
   }
 
   &__item {
-    color: white;
+    color: $white;
     transform: translateX(100rem);
     padding: 5px 10px;
     @include animation-delay(5);
@@ -53,7 +53,7 @@ header {
       display: block;
       width: 0;
       height: 2px;
-      background: #896FBC;;
+      background: $light-purple;
       transition: width 0.3s;
     }
 
@@ -64,33 +64,32 @@ header {
   }
 
   &--sticky {
-    background: #1B1734;
-    box-shadow: 0 3px 12px 0 #896FBC;
+    background: $dark-purple;
+    box-shadow: 0 3px 12px 0 $light-purple;
     top: 0;
     padding: 5px;
     transition: 0.5s;
   }
 }
 
-@include mq(lg,max) {
+@include for-phone-only {
   .toggle {
     display: block;
-    background-color:#896FBC ;
   }
-  
-  .nav {   
+
+  .nav {
     display: none;
     padding-top: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-align: center; 
+    text-align: center;
   }
 
   .nav__open {
     display: flex;
     transform: scale(1);
     opacity: 1;
-    background-color: #1B1734;
+    background-color: $dark-purple;
   }
 }

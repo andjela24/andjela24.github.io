@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-//@import "../node_modules/bootstrap/scss/bootstrap.scss";
-//@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~bootstrap/scss/bootstrap.scss";
 @import "buttons";
 @import "reset";
 @import "animations";
+@import "mixins";
 @import "variables";
 
 body {
@@ -26,4 +29,9 @@ body {
   height: 0.2rem;
   background-color: $light-purple;
   margin: 20px auto 20px;
+}
+@mixin respond-medium {
+  @media (max-width: 900px) {
+    @content;
+  }
 }
