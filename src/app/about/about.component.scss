@@ -3,30 +3,31 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 .about {
-  @include flex-container(row);
+  @include flex-row;
   position: relative;
   height: 100vh;
+  max-width: 100%;
   background-color: $dark-purple;
 
-  &__details {
-    left: 10%;
-    position: absolute;
-    flex-basis: 50%;
+  & .text {
+    @include flex-column;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
     color: $white;
   }
-
-  &__title {
+  & .title {
     color: $white;
     font-size: $font-size-h1;
   }
 
-  &__paragraph {
+  & .paragraph {
     color: $white;
     font-size: $paragraph;
     margin-bottom: 15px;
   }
 
-  &__cv_button {
+  & .cv_button {
     background-color: $light-purple;
     color: $white;
     border-radius: 10px;
@@ -41,116 +42,52 @@
     cursor: pointer;
   }
 
-  &__cv_button:hover {
+  & .cv_button:hover {
     background-color: $purple;
     color: $white;
   }
-
-  &__img {
+  & .image {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s ease-in;
+    display: flex;
+    justify-content: center;
+  }
+  img {
     position: absolute;
-    height: 90vh;
-    max-width: 100%;
-    bottom: 0;
-    right: 0;
-  }
-  @include for-phone-only {
-    &__img {
-      position: absolute;
-      max-width: 100%;
-      height: auto;
-      right: 10%;
-      left: 10%;
-      object-fit: cover;
-      object-position: bottom;
-    }
-  }
-}
-@include for-phone-only {
-  .about {
-    &__img {
-      position: absolute;
-      max-width: 100%;
-      height: auto;
-      right: 10%;
-      left: 10%;
-      object-fit: cover;
-      object-position: bottom;
-    }
-
-    &__details {
-      //position: absolute;
-      flex-basis: 90%;
-      top: 100px;
-      left: 10%;
-      //@include flex-container(column);
-    }
-  }
-}
-/*
-@include mq-between(xs, md) {
-  .about {
-    &__img {
-      position: absolute;
-      max-width: 100%;
-      height: auto;
-      right: 10%;
-      left: 10%;
-      object-fit: cover;
-      object-position: bottom;
-    }
-
-    &__details {
-      //position: absolute;
-      flex-basis: 90%;
-      top: 100px;
-      left: 10%;
-      //@include flex-container(column);
-    }
-  }
-}
-/*
-@include mq-between(xs, lg) {
-  .about {
-    &__img {
-      position: absolute;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      object-position: bottom;
-      //flex-basis: 90%;
-      //bottom: 0;
-      //right: 20%;
-      //left: 20%;
-      //max-width: 60%;
-      //height: auto;
-    }
-
-    &__details {
-      position: absolute;
-      flex-basis: 90%;
-      top: 100px;
-      left: 10%;
-      @include flex-container(column);
-    }
+    width: auto;
+    height: 100%;
   }
 }
 
-@include mq-between(md, lg) {
-  .about {
-    height: 165vh;
-  }
-}
-@include mq-between(sm, md) {
-  .about {
-    height: 120vh;
-  }
-}
 @include mq-between(xs, sm) {
   .about {
-    height: 100vh;
+    @include flex-row;
+    height: auto;
+    & .text {
+      position: relative;
+      padding-top: 20%;
+      width: 100%;
+    }
+    & .cv_button {
+      bottom: 0;
+      left: 50%;
+    }
+    & .image {
+      height: 60vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    img {
+      width: auto;
+      max-height: 100%;
+      bottom: 0;
+    }
   }
 }
-*/
+
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;

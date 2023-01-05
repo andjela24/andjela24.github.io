@@ -6,8 +6,35 @@
   }
   display: flex;
   flex-wrap: wrap;
+  row-gap: 20px;
+  gap: 20px;
   align-items: center;
   flex-direction: $flexdirection;
+}
+
+@mixin flex-column(
+  $direction: column,
+  $wrap: wrap,
+  $justify: center,
+  $align: center
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flex-row(
+  $direction: row,
+  $wrap: wrap,
+  $justify: center,
+  $align: center
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin grid-template {
@@ -29,28 +56,66 @@
   grid-template-columns: repeat($line, $column);
   grid-template-rows: 300px;
 }
+
+//Media query to use breakpoints
+@mixin mq($breakpoint, $type: min) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map_get($breakpoints, $breakpoint);
+    @if $type == max {
+      $breakpoint-value: $breakpoint-value - 1px;
+    }
+    @media (#{$type}-width: $breakpoint-value) {
+      @content;
+    }
+  }
+}
+
+//Media query to use the screen with minimum and maximum size
+@mixin mq-between($lower, $upper) {
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+      @content;
+    }
+  }
+  else {
+    @if (map-has-key($breakpoints, $lower) == false) {
+      @warn 'Your breakpoint was invalid: #{$lower}.';
+    }
+    @if (map-has-key($breakpoints, $upper) == false) {
+      @warn 'Your breakpoint was invalid: #{$upper}.';
+    }
+  }
+}
+
+/*
 @mixin for-phone-only {
-  @media (max-width: 599px) {
+  @media (max-width: 544px) {
     @content;
   }
 }
 @mixin for-tablet-portrait-up {
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
+
 @mixin for-tablet-landscape-up {
   @media (min-width: 900px) {
     @content;
   }
 }
+
 @mixin for-desktop-up {
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     @content;
   }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
+*/

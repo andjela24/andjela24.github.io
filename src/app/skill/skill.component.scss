@@ -1,26 +1,25 @@
 @import "mixins";
-//@import "media-queries.scss";
 @import "variables";
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .skill {
-  @include flex-container(column);
+  @include flex-column;
   position: relative;
   padding: 4rem 0 4rem 0;
 
-  &__heading {
+  & .heading {
     align-self: center;
     text-align: center;
     color: $white;
   }
 
-  &_title {
+  & .title {
     font-size: $font-size-h2;
     text-transform: uppercase;
     color: $purple;
   }
 
-  &__paragraph {
+  & .paragraph {
     margin-bottom: 10px;
     color: $purple;
     font-size: $paragraph;
@@ -38,13 +37,13 @@
 .container .card:hover {
   height: 150px;
 }
-.container .card .imgContainer {
+.container .card .img_container {
   position: relative;
   width: 250px;
   height: 250px;
   z-index: 1;
 }
-.container .card .imgContainer img {
+.container .card .img_container img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -68,8 +67,8 @@
   transition-delay: 0.3s;
 }
 
-@media (max-width: 330px) {
-  .container .card .imgContainer {
+@include mq(sm, min) {
+  .container .card .img_container {
     left: -2px;
   }
 }

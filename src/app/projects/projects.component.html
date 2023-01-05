@@ -1,25 +1,22 @@
-<section class="projects" id="projects">
-    <div class="projects__heading" [@scrollAnimation]="state">
-        <h2 class="projects__title">PROJECTS</h2>
+<section class="projects">
+    <div class="heading" [@scrollAnimation]="state">
+        <h2 class="title">PROJECTS</h2>
     </div>
     <div class="underline"></div>
     <div class="container">
         <div class="grid" [@scrollAnimation]="state">
-            <figure class="photo photo--wrapper" *ngFor="let projects of projectList">
-                <img class="photo__img" alt="projects" [src]="projects.img">
+            <figure class="photo" *ngFor="let projects of projectList">
+                <img class="image" alt="projects" [src]="projects.img">
                 <div class="overlay">
-                    <h4 class="overlay__title">{{projects.title}}</h4>
-                    <p class="overlay__paragraph">{{projects.paragraph}}</p>
+                    <h4 class="title">{{projects.title}}</h4>
                     <ul class="list">
-                        <li class="list__item" *ngFor="let tools of projects.tools"><span
-                                class="list__tag">{{tools.title}}</span></li>
+                        <li class="item" *ngFor="let tools of projects.tools"><span class="tag">{{tools.title}}</span>
+                        </li>
                     </ul>
-                    <div class="overlay__icon">
+                    <div class="icon">
                         <a id="icon" class="fab fa-github fa-3x" style="color:white" href="{{projects.github}}"
                             target="_blank">
                         </a>
-                    </div>
-                    <div class="overlay__icon">
                         <a id="icon" class="fas fa-globe fa-3x" style="color:white" href="{{projects.website}}"
                             target="_blank">
                         </a>
