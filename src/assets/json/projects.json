@@ -40,23 +40,23 @@
     "website": "https://andjela24.github.io/"
   },
   {
-    "title": "CRM ",
+    "title": "E-commerce ",
     "tools": [
       {
-        "title": "React"
+        "title": "C#"
       },
       {
-        "title": "JavaScript"
+        "title": "ASP.NET MVC"
       },
       {
-        "title": "MongoDB"
+        "title": "SQL"
       },
       {
         "title": "SCSS"
       }
     ],
-    "img": "./assets/img/crm.gif",
-    "github": "https://github.com/hanibengozi/CRM-Clients-Management",
+    "img": "./assets/img/E-commerce-C-Sharp.gif",
+    "github": "https://github.com/andjela24/eTickets",
     "website": ""
   }
 ]
