@@ -1,7 +1,6 @@
 [
   {
     "title": "Netflix Clone App",
-    "paragraph": "",
     "tools": [
       {
         "title": "React.js"
@@ -22,7 +21,6 @@
   },
   {
     "title": "Portfolio Website",
-    "paragraph": " ",
     "tools": [
       {
         "title": "Angular 13"
@@ -38,37 +36,24 @@
       }
     ],
     "img": "./assets/img/Portfolio.gif",
-    "github": "https://github.com/Andjela24/andjela-portfolio",
-    "website": " "
+    "github": "https://github.com/andjela24/andjela24.github.io",
+    "website": "https://andjela24.github.io/"
   },
   {
-    "title": "CRM ",
-    "paragraph": "Full Stack App An insurance company's Customer Relationship Management website.",
+    "title": "E-tickets ",
     "tools": [
       {
-        "title": "React"
+        "title": "C#"
       },
       {
-        "title": "JavaScript"
+        "title": "ASP.NET MVC"
       },
       {
-        "title": "MongoDB"
-      },
-      {
-        "title": "SCSS"
-      },
-      {
-        "title": "Exspress"
-      },
-      {
-        "title": "Mongoose"
-      },
-      {
-        "title": "Git"
+        "title": "SQL"
       }
     ],
-    "img": "./assets/img/crm.gif",
-    "github": "https://github.com/hanibengozi/CRM-Clients-Management",
+    "img": "./assets/img/E-tickets.gif",
+    "github": "https://github.com/andjela24/eTickets",
     "website": ""
   }
 ]
