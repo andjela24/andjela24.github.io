@@ -40,7 +40,7 @@
     "website": "https://andjela24.github.io/"
   },
   {
-    "title": "E-tickets ",
+    "title": "E-tickets",
     "tools": [
       {
         "title": "C#"
@@ -52,8 +52,25 @@
         "title": "SQL"
       }
     ],
-    "img": "./assets/img/E-tickets.gif",
+    "img": "./assets/img/Etickets.gif",
     "github": "https://github.com/andjela24/eTickets",
+    "website": ""
+  },
+  {
+    "title": "Tetris Game",
+    "tools": [
+      {
+        "title": "C#"
+      },
+      {
+        "title": "Simple game"
+      },
+      {
+        "title": "Console application"
+      }
+    ],
+    "img": "./assets/img/Tetris.gif",
+    "github": "https://github.com/andjela24/TetrisGame",
     "website": ""
   }
 ]
