@@ -20,26 +20,6 @@
     "website": "https://andjela-netflix-clone.web.app "
   },
   {
-    "title": "Portfolio Website",
-    "tools": [
-      {
-        "title": "Angular 13"
-      },
-      {
-        "title": "SCSS"
-      },
-      {
-        "title": "JavaScript"
-      },
-      {
-        "title": "HTML5"
-      }
-    ],
-    "img": "./assets/img/Portfolio.gif",
-    "github": "https://github.com/andjela24/andjela24.github.io",
-    "website": "https://andjela24.github.io/"
-  },
-  {
     "title": "E-tickets",
     "tools": [
       {
@@ -57,7 +37,7 @@
     "website": ""
   },
   {
-    "title": "Amazon Clonr",
+    "title": "Amazon Clone",
     "tools": [
       {
         "title": "React"
