@@ -49,9 +49,9 @@
         "title": "MongoDB"
       }
     ],
-    "img": "./assets/img/Amazon-colne.gif",
+    "img": "./assets/img/Amazon-clone.gif",
     "github": "https://github.com/andjela24/amazon-clone",
-    "website": "https://andjela-24-amazon-clone.netlify.app"
+    "website": "https://andjela24-amazon-clone.netlify.app/"
   },
   {
     "title": "Tetris Game",
