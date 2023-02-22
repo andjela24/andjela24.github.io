@@ -57,6 +57,23 @@
     "website": ""
   },
   {
+    "title": "Amazon Clonr",
+    "tools": [
+      {
+        "title": "React"
+      },
+      {
+        "title": "Node.js"
+      },
+      {
+        "title": "MongoDB"
+      }
+    ],
+    "img": "./assets/img/Amazon-colne.gif",
+    "github": "https://github.com/andjela24/amazon-clone",
+    "website": "https://andjela-24-amazon-clone.netlify.app"
+  },
+  {
     "title": "Tetris Game",
     "tools": [
       {
