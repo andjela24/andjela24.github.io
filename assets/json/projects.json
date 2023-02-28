@@ -1,7 +1,6 @@
 [
   {
     "title": "Netflix Clone App",
-    "paragraph": "",
     "tools": [
       {
         "title": "React.js"
@@ -21,54 +20,54 @@
     "website": "https://andjela-netflix-clone.web.app "
   },
   {
-    "title": "Portfolio Website",
-    "paragraph": " ",
+    "title": "E-tickets",
     "tools": [
       {
-        "title": "Angular 13"
+        "title": "C#"
       },
       {
-        "title": "SCSS"
+        "title": "ASP.NET MVC"
       },
       {
-        "title": "JavaScript"
-      },
-      {
-        "title": "HTML5"
+        "title": "SQL"
       }
     ],
-    "img": "./assets/img/Portfolio.gif",
-    "github": "https://github.com/Andjela24/andjela-portfolio",
-    "website": " "
+    "img": "./assets/img/Etickets.gif",
+    "github": "https://github.com/andjela24/eTickets",
+    "website": "https://andjela24.github.io/coming-soon/"
   },
   {
-    "title": "CRM ",
-    "paragraph": "Full Stack App An insurance company's Customer Relationship Management website.",
+    "title": "Amazon Clone",
     "tools": [
       {
         "title": "React"
       },
       {
-        "title": "JavaScript"
+        "title": "Node.js"
       },
       {
         "title": "MongoDB"
-      },
-      {
-        "title": "SCSS"
-      },
-      {
-        "title": "Exspress"
-      },
-      {
-        "title": "Mongoose"
-      },
-      {
-        "title": "Git"
       }
     ],
-    "img": "./assets/img/crm.gif",
-    "github": "https://github.com/hanibengozi/CRM-Clients-Management",
-    "website": ""
+    "img": "./assets/img/Amazon-clone.gif",
+    "github": "https://github.com/andjela24/amazon-clone",
+    "website": "https://andjela24-amazon-clone.netlify.app/"
+  },
+  {
+    "title": "Tetris Game",
+    "tools": [
+      {
+        "title": "C#"
+      },
+      {
+        "title": "Simple game"
+      },
+      {
+        "title": "WPF Application"
+      }
+    ],
+    "img": "./assets/img/Tetris.gif",
+    "github": "https://github.com/andjela24/TetrisGame",
+    "website": "https://andjela24.github.io/download-tetris/"
   }
 ]
