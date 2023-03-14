@@ -34,7 +34,7 @@
     ],
     "img": "./assets/img/Etickets.gif",
     "github": "https://github.com/andjela24/eTickets",
-    "website": ""
+    "website": "https://andjela24.github.io/coming-soon/"
   },
   {
     "title": "Amazon Clone",
@@ -51,7 +51,7 @@
     ],
     "img": "./assets/img/Amazon-clone.gif",
     "github": "https://github.com/andjela24/amazon-clone",
-    "website": "https://andjela24-amazon-clone.netlify.app/"
+    "website": "https://andjela24.github.io/coming-soon/"
   },
   {
     "title": "Tetris Game",
@@ -68,6 +68,6 @@
     ],
     "img": "./assets/img/Tetris.gif",
     "github": "https://github.com/andjela24/TetrisGame",
-    "website": ""
+    "website": "https://andjela24.github.io/download-tetris/"
   }
 ]
